@@ -25,3 +25,7 @@ item = cart.remove_item_id_product(id_product_remove)
 print("Resultado do carrinho com o item removido:", cart.carts)
 
 #calcular o total do carrinho
+sum=0
+for c in cart.carts:
+    sum+=c[2]*c[3]
+print(f"O valor total do carrinho é R$", "{:.2f}".format(sum))
